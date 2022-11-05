@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Of India</title>
+    <style>
+        .header {
+            background-color: blueviolet;
+            color: white;
+            /* height: 90px; */
+        }
+
+        .mid {
+            position: absolute;
+            left: 34px;
+            top: 5px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .mid img {
+            width: 50px;
+            margin: 4px 18px;
+        }
+
+        .mid div {
+            text-align: center;
+
+
+
+        }
+
+        .left {
+            display: block;
+            width: 33%;
+            margin: 5px 210px;
+            /* border: 2px solid greenyellow; */
+        }
+
+
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 5px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .right input {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px 70px;
+            width: 12px;
+            margin: 14px 4px;
+        }
+
+
+        .right button {
+            width: 90px;
+            height: 20px;
+            /* margin: 2px 125px;
+            padding: 1px 4px; */
+        }
+
+        .btn {
+            width: 300px;
+            height: 20px;
+            margin: 2PX 2PX;
+            padding: 2px 2px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: bisque;
+            text-decoration: none;
+            padding: 28px 13px;
+        }
+
+        .navbar li a:hover {
+            color: beige;
+        }
+
+        .btn2 {
+            background-color: rgb(42, 167, 202);
+            margin: 9px 700px;
+
+            color: black;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container {
+            width: 1500px;
+            height: 750px;
+            background-color: brown;
+        }
+
+        .container img {
+            width: 1500px;
+            height: 450px;
+        }
+
+        .container p {
+            text-align: justify;
+            color: aquamarine;
+        }
+
+        .photo {
+            float: left;
+            /* text-align: left; */
+            width: 400px;
+            height: 500px;
+            background-color: blue;
+            margin: 20px 127px 0px 0px;
+            color: rgb(237, 121, 237);
+        }
+
+        .photo img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .photo1 {
+            /* text-align: end; */
+            float: left;
+            width: 400px;
+            height: 500px;
+            background-color: rgb(217, 23, 52);
+            /* padding: 0px 75px; */
+            margin: 20px 100px 0px 20px;
+            color: aquamarine;
+        }
+
+        .photo1 img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .photo2 {
+            display: inline-block;
+            /* text-align: end; */
+            width: 400px;
+            height: 500px;
+            background-color: rgba(0, 200, 255, 0.516);
+            /* padding: 0px 75px; */
+            margin: 20px 0px 0px 50px;
+            color: rgb(184, 58, 180);
+        }
+
+        .photo2 img {
+            width: 400px;
+            height: 300px;
+        }
+
+
+
+
+        #foot {
+            border-top: 2px solid black;
+            margin: 20px;
+            /* border-left: 2px solid red */
+            ;
+        }
+
+        /* .extra{
+            border-left: 2px solid red;
+            padding: 2px 2px;
+            margin: 2px 2px; 
+        }*/
+
+
+        .main {
+            background-color: darkcyan;
+            /* border-left: 2px solid red; */
+            /* margin: 2px 2px; */
+            width: 100%;
+            height: 365px;
+        }
+
+        .main ol {
+            overflow: auto;
+        }
+
+        .main li {
+            float: left;
+            list-style: none;
+            margin: 8px 32px;
+        }
+
+        .main li a {
+            padding: 13px 7px;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+
+        .main1 {
+            color: aquamarine;
+            font size: 25px;
+            float: right;
+            margin: -40px 155px;
+
+        }
+
+        .main li a:hover {
+            opacity: 0.7;
+        }
+
+        .para {
+            text-align: center;
+
+            color: aqua;
+        }
+
+
+
+
+
+
+
+
+        /* Style all font awesome icons */
+        .fa {
+            padding: 15px 8px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px 11px;
+            float: right;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background-color: rgb(190, 53, 126);
+            color: white;
+        }
+
+        .fa-youtube {
+            background-color: red;
+            color: white;
+        }
+
+        .dil {
+            padding: 0px 10px;
+            margin: -25px 30px;
+        }
+
+        .int {
+            padding: 2px 6px;
+            margin: 2px 22px;
+        }
+
+        .enquiry {
+            color: rgb(167, 240, 66);
+            padding: 2px 68px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="mid">
+            <img src="Red-Fort-ili-276-ogimg.jpg" alt="">
+            <div>India Heritage</div>
+        </div>
+        <div class="right">
+            <input type="text" name="search" id="search">
+            <button type="submit">submit</button>
+            <button class="btn">Call Us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <img src="Sambhalgarh.jpg" alt="Error 404">
+        <p class="para"><strong> Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. Vel, aliquam qui.
+            Repellendus veniam eligendi similique, explicabo alias impedit quisquam
+            dolorem nesciunt, et, nostrum blanditiis. Eos, labore optio tempore nam,
+            inventore est harum, veniam hic dolor officiis doloribus ducimus! Id fuga
+            eos qui quia consectetur placeat iste cupiditate eum saepe sed, ipsam non
+            soluta nam harum?<i> Ea repellat nemo deleniti? Ullam suscipit a mollitia,
+                consectetur voluptatibus iste ducimus unde magnam laborum eius sint nihil
+                ex enim commodi itaque, adipisci laudantium debitis libero ipsa dolorum.
+                Laudantium qui natus hic ut aperiam perspiciatis fugit modi delectus
+                iste nemo corrupti, recusandae velit nisi non.</i></p>
+        <p class="para"><b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</b> Ratione nobis nulla neque,
+            veniam dicta
+            ullam in
+            reprehenderit repellendus perferendis eum at explicabo. Necessitatibus neque placeat tenetur itaque et
+            quisquam, dolores at ad ducimus quo quaerat magni aperiam voluptatum repellendus ipsum? Repellat sit laborum
+            repellendus? Distinctio soluta eligendi magni nam itaque quidem! Voluptatum exercitationem dolor dolore
+            voluptas iste itaque enim nihil minus, iusto vel, quaerat optio ipsam veritatis neque eligendi obcaecati non
+            deleniti reiciendis error cupiditate similique ab voluptates? Eaque minus accusantium illo consectetur,
+            impedit alias enim numquam quasi, dolorum perspiciatis soluta vel exercitationem praesentium tempore! Hic
+            illum officia fugiat nihil soluta rem, exercitationem quis! Deleniti voluptas quibusdam unde impedit libero
+            labore, doloremque, eaque, corporis tempora ipsum incidunt cum magnam. Tempora aspernatur dolores sed odit
+            quaerat corrupti cupiditate vel explicabo delectus, ad eligendi facilis itaque sequi iusto animi, sint ea
+            repudiandae aliquam consequuntur accusantium praesentium quia provident ex. Suscipit fugit eum doloribus
+            asperiores magni quis libero? Adipisci pariatur necessitatibus voluptate reprehenderit. Tenetur fugit
+            reprehenderit nemo optio sint explicabo quisquam debitis. Maiores, excepturi iusto iure, illum officia
+            tempora laboriosam repellendus voluptatibus ab facere debitis ipsam deleniti reprehenderit atque libero, at
+            minus blanditiis! Ea totam, fugit corrupti debitis mollitia quos, recusandae obcaecati vel assumenda optio
+            sequi esse itaque nobis animi. Hic libero excepturi alias consequuntur enim odit possimus veniam adipisci!
+            In, soluta! Eveniet totam vero autem commodi recusandae laborum, quibusdam, voluptates impedit assumenda
+            atque similique accusamus repellendus nostrum sequi ipsam deleniti voluptatem eaque quisquam dicta nihil
+            beatae possimus quia? Incidunt distinctio accusantium dolorem.</p>
+        <!-- <button class="btn2" onclick="togglehide()"> Show / hide </button> -->
+    </div>
+
+    <div class="photo">
+        <img src="amber-fort-3101342_960_720.jpg" alt="error 404">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, doloribus. Architecto necessitatibus
+            illo quod aperiam nihil laboriosam! Voluptatum fugiat quasi nulla provident, qui vero quia a amet nesciunt
+            eius sequi vel unde est deserunt vitae deleniti ut distinctio. Odio ad autem repudiandae. Voluptatum aperiam
+            nostrum, dicta expedita sequi consequuntur quo praesentium vitae, ex fuga maxime excepturi! Dolorum beatae
+            ut pariatur?</p>
+    </div>
+
+    <div class="photo1">
+        <img src="Jantar-Mantar-Jaipur.jpg" alt="error 404">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolor, magni nam eveniet accusamus maxime
+            temporibus quaerat recusandae est blanditiis voluptates doloribus quidem praesentium repellat suscipit
+            consectetur voluptatem beatae a, earum ab nobis accusantium culpa! Officia asperiores, culpa facere
+            molestiae repudiandae consectetur magnam, alias sapiente dolore perspiciatis amet quis. Provident saepe
+            obcaecati cumque placeat ipsa natus ea veritatis laudantium quas!</p>
+    </div>
+
+    <div class="photo2">
+        <img src="Red-Fort-ili-276-ogimg.jpg" alt="error 404">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dolor, magni nam eveniet accusamus maxime
+            temporibus quaerat recusandae est blanditiis voluptates doloribus quidem praesentium repellat suscipit
+            consectetur voluptatem beatae a, earum ab nobis accusantium culpa! Officia asperiores, culpa facere
+            molestiae repudiandae consectetur magnam, alias sapiente dolore perspiciatis amet quis. Provident saepe
+            obcaecati cumque placeat ipsa natus ea veritatis laudantium quas!</p>
+    </div>
+
+
+    <div id="foot">
+        <footer class="main">
+            <ol>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ol>
+            <p class="para"><strong><i>Welcome to SAJID Website World</i></strong></p>
+            <!-- <div class="extra">dil</div> -->
+            <div class="main1">Follow us</div>
+            <!-- Add icon library -->
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/login" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/saj90511/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+
+            <div class="dil">
+                <h3 class="enquiry">Enquiry</h3>
+                <form action="">
+                    Name: <input type="text" name=" name" id="name" placeholder="Enetr Your Name Here...">
+                    <br><br>
+                    Address: <textarea name="address" id="address" cols="" rows=""></textarea>
+                    <br><br>
+                    Gender: <input type="radio" value="m" name="gender">Male
+                    <input type="radio" value="f" name="gender">Female
+                    <br><br>
+                    Mobile no: <input type="number">
+                    <br><br>
+                    Email: <input type="email">
+                    <br><br>
+
+                    <input class="int" type="submit">
+                    <input class="int" type="reset">
+                </form>
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        // function togglehide(){
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+        //     if(para.style.display !='none'){
+        //     para.style.display = 'none';
+        //     }
+        //     else{
+        //         para.style.display = 'block';
+        //     }
+        // }
+
+
+
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover',function run(){
+        //     alert('mouse inside') // Or
+        // console.log('mouse Inside')
+        // });
+
+
+
+
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseout', function run(){
+        //     alert('Mouse Outside')  // Or
+        //  console.log('mouse Now Went Outside')
+        // });
+
+
+
+    //    Now Set Date
+
+   
+    // let now = new Date();
+    // console.log(now)
+
+
+
+    // let dt = new Date(10000);
+    // console.log(dt)
+
+
+
+    // let newdate = new Date('1996-09-18');
+    // console.log(newdate)
+
+
+
+    // let newdate = new Date(year,month,day,hours,minutes,seconds,milliseconds);
+
+    // let newdate = new Date(2022,9,27,5,23,24,870);
+    // console.log(newdate) 
+
+
+    // let now = new Date();
+    // console.log(now)
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>
